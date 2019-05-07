@@ -1,0 +1,28 @@
+创建索引
+curl -H "Content-Type: application/json" -XPUT 'localhost:9200/report_v20190430?pretty' -d ' @mappingJson '
+
+删除索引
+curl -XDELETE 'localhost:9200/evidence?pretty'
+
+创建别名
+curl -X POST "localhost:9200/_aliases" -H 'Content-Type: application/json' -d'
+{
+    "actions" : [
+        { "remove" : { "index" : "evidence", "alias" : "evidence_v20190429" } },
+        { "add" : { "index" : "evidence", "alias" : "evidence_v20190430" } }
+    ]
+}
+'
+
+注：使用别名访问，索引名称在别名基础上进行日期编号，如证据索引，evidence为别名，evidence_v20190430为索引名称
+
+
+
+测试分词
+curl -X GET "localhost:9200/_analyze?pretty" -H 'Content-Type: application/json' -d'
+{
+  "tokenizer" : "ik_max_word",
+  "text" : "周瑜打黄盖 Just do it"
+}
+'
+

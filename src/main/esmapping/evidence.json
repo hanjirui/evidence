@@ -1,0 +1,242 @@
+{
+  "mappings": {
+    "_doc": {
+      "dynamic": false,
+      "properties": {
+        "actTime": {
+          "type": "date",
+          "format": "yyyy-MM-dd HH:mm:ss||yyyy-MM-dd||epoch_millis"
+        },
+        "createTime": {
+          "type": "date",
+          "format": "yyyy-MM-dd HH:mm:ss||yyyy-MM-dd||epoch_millis"
+        },
+        "updateTime": {
+          "type": "date",
+          "format": "yyyy-MM-dd HH:mm:ss||yyyy-MM-dd||epoch_millis"
+        },
+        "caseId": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword"
+            }
+          }
+        },
+        "category": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword"
+            }
+          }
+        },
+        "flowDirection": {
+          "type": "integer"
+        },
+        "modelType": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword"
+            }
+          }
+        },
+        "pairs": {
+          "properties": {
+            "name": {
+              "type": "text",
+              "fields": {
+                "raw": {
+                  "type": "keyword"
+                }
+              }
+            },
+            "value": {
+              "type": "text",
+              "analyzer": "ik_max_word",
+              "search_analyzer": "ik_max_word"
+            }
+          }
+        },
+        "orderNumber": {
+          "type": "integer"
+        },
+        "nodeId": {
+          "type": "integer"
+        },
+        "deleteFlag": {
+          "type": "integer"
+        },
+        "systemDeleteFlag": {
+          "type": "integer"
+        },
+        "f1": {
+          "type": "double"
+        },
+        "f2": {
+          "type": "double"
+        },
+        "f3": {
+          "type": "double"
+        },
+        "f4": {
+          "type": "double"
+        },
+        "f5": {
+          "type": "double"
+        },
+        "f6": {
+          "type": "double"
+        },
+        "f7": {
+          "type": "double"
+        },
+        "f8": {
+          "type": "double"
+        },
+        "f9": {
+          "type": "double"
+        },
+        "f10": {
+          "type": "double"
+        },
+        "nv1": {
+          "type": "text",
+          "index": "false"
+        },
+        "nv2": {
+          "type": "text",
+          "index": "false"
+        },
+        "nv3": {
+          "type": "text",
+          "index": "false"
+        },
+        "nv4": {
+          "type": "text",
+          "index": "false"
+        },
+        "nv5": {
+          "type": "text",
+          "index": "false"
+        },
+        "nv6": {
+          "type": "text",
+          "index": "false"
+        },
+        "nv7": {
+          "type": "text",
+          "index": "false"
+        },
+        "nv8": {
+          "type": "text",
+          "index": "false"
+        },
+        "nv9": {
+          "type": "text",
+          "index": "false"
+        },
+        "nv10": {
+          "type": "text",
+          "index": "false"
+        },
+        "t1": {
+          "type": "date",
+          "format": "yyyy-MM-dd HH:mm:ss||yyyy-MM-dd||epoch_millis"
+        },
+        "t2": {
+          "type": "date",
+          "format": "yyyy-MM-dd HH:mm:ss||yyyy-MM-dd||epoch_millis"
+        },
+        "t3": {
+          "type": "date",
+          "format": "yyyy-MM-dd HH:mm:ss||yyyy-MM-dd||epoch_millis"
+        },
+        "t4": {
+          "type": "date",
+          "format": "yyyy-MM-dd HH:mm:ss||yyyy-MM-dd||epoch_millis"
+        },
+        "t5": {
+          "type": "date",
+          "format": "yyyy-MM-dd HH:mm:ss||yyyy-MM-dd||epoch_millis"
+        },
+        "v1": {
+          "type": "text",
+          "analyzer": "ik_max_word",
+          "search_analyzer": "ik_max_word"
+        },
+        "v2": {
+          "type": "text",
+          "analyzer": "ik_max_word",
+          "search_analyzer": "ik_max_word"
+        },
+        "v3": {
+          "type": "text",
+          "analyzer": "ik_max_word",
+          "search_analyzer": "ik_max_word"
+        },
+        "v4": {
+          "type": "text",
+          "analyzer": "ik_max_word",
+          "search_analyzer": "ik_max_word"
+        },
+        "v5": {
+          "type": "text",
+          "analyzer": "ik_max_word",
+          "search_analyzer": "ik_max_word"
+        },
+        "v6": {
+          "type": "text",
+          "analyzer": "ik_max_word",
+          "search_analyzer": "ik_max_word"
+        },
+        "v7": {
+          "type": "text",
+          "analyzer": "ik_max_word",
+          "search_analyzer": "ik_max_word"
+        },
+        "v8": {
+          "type": "text",
+          "analyzer": "ik_max_word",
+          "search_analyzer": "ik_max_word"
+        },
+        "v9": {
+          "type": "text",
+          "analyzer": "ik_max_word",
+          "search_analyzer": "ik_max_word"
+        },
+        "v10": {
+          "type": "text",
+          "analyzer": "ik_max_word",
+          "search_analyzer": "ik_max_word"
+        },
+        "v11": {
+          "type": "text",
+          "analyzer": "ik_max_word",
+          "search_analyzer": "ik_max_word"
+        },
+        "v12": {
+          "type": "text",
+          "analyzer": "ik_max_word",
+          "search_analyzer": "ik_max_word"
+        },
+        "v13": {
+          "type": "text",
+          "analyzer": "ik_max_word",
+          "search_analyzer": "ik_max_word"
+        },
+        "v14": {
+          "type": "text",
+          "analyzer": "ik_max_word",
+          "search_analyzer": "ik_max_word"
+        },
+        "v15": {
+          "type": "text",
+          "analyzer": "ik_max_word",
+          "search_analyzer": "ik_max_word"
+        }
+      }
+    }
+  }
+}

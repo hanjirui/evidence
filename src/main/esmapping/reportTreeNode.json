@@ -1,0 +1,96 @@
+{
+  "mappings": {
+    "_doc": {
+      "dynamic": false,
+      "properties": {
+        "createTime": {
+          "type": "date",
+          "format": "yyyy-MM-dd HH:mm:ss||yyyy-MM-dd||epoch_millis"
+        },
+        "updateTime": {
+          "type": "date",
+          "format": "yyyy-MM-dd HH:mm:ss||yyyy-MM-dd||epoch_millis"
+        },
+        "caseId": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword"
+            }
+          }
+        },
+        "nodeName": {
+          "type": "text",
+          "index": "false"
+        },
+        "modelType": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword"
+            }
+          }
+        },
+        "systemDeleteFlag": {
+          "type": "integer"
+        },
+        "nodeId": {
+          "type": "integer"
+        },
+        "parentNodeId": {
+          "type": "integer"
+        },
+        "level": {
+          "type": "integer"
+        },
+        "leafFlag": {
+          "type": "integer"
+        },
+        "category": {
+          "type": "text",
+          "index": "false"
+        },
+        "subCategory1": {
+          "type": "text",
+          "index": "false"
+        },
+        "subCategory2": {
+          "type": "text",
+          "index": "false"
+        },
+        "subCategory3": {
+          "type": "text",
+          "index": "false"
+        },
+        "subCategory4": {
+          "type": "text",
+          "index": "false"
+        },
+        "subCategory5": {
+          "type": "text",
+          "index": "false"
+        },
+        "subCategory6": {
+          "type": "text",
+          "index": "false"
+        },
+        "subCategory7": {
+          "type": "text",
+          "index": "false"
+        },
+        "subCategory8": {
+          "type": "text",
+          "index": "false"
+        },
+        "subCategory9": {
+          "type": "text",
+          "index": "false"
+        },
+        "subCategory10": {
+          "type": "text",
+          "index": "false"
+        }
+      }
+    }
+  }
+}

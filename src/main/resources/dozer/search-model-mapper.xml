@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mappings xmlns="http://dozer.sourceforge.net" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://dozer.sourceforge.net
+          http://dozer.sourceforge.net/schema/beanmapping.xsd">
+    <mapping>
+        <class-a>com.court.evidence.es.model.Evidence</class-a>
+        <class-b>com.court.evidence.domain.BigProperty</class-b>
+        <field><a>pairs</a><b>pairs</b></field>
+    </mapping>
+
+    <mapping>
+        <class-a>com.court.evidence.es.model.Evidence</class-a>
+        <class-b>com.court.evidence.domain.App</class-b>
+        <field><a>v1</a><b>appName</b></field>
+        <field><a>nv1</a><b>version</b></field>
+        <field><a>nv2</a><b>packageName</b></field>
+        <field><a>t1</a><b>installTime</b></field>
+        <field><a>t2</a><b>upgradeTime</b></field>
+    </mapping>
+
+    <mapping>
+        <class-a>com.court.evidence.es.model.Evidence</class-a>
+        <class-b>com.court.evidence.domain.AppStatistic</class-b>
+        <field><a>v1</a><b>appName</b></field>
+        <field><a>f1</a><b>eventCount</b></field>
+        <field><a>f2</a><b>contactsCount</b></field>
+        <field><a>f3</a><b>fileCount</b></field>
+        <field><a>f4</a><b>deleteCount</b></field>
+        <field><a>f5</a><b>totalCount</b></field>
+    </mapping>
+
+    <mapping>
+        <class-a>com.court.evidence.es.model.Evidence</class-a>
+        <class-b>com.court.evidence.domain.Account</class-b>
+        <field><a>v1</a><b>accountId</b></field>
+        <field><a>v2</a><b>accountName</b></field>
+        <field><a>v3</a><b>nickname</b></field>
+        <field><a>v4</a><b>realName</b></field>
+        <field><a>v5</a><b>appName</b></field>
+        <field><a>v6</a><b>password</b></field>
+        <field><a>v7</a><b>email</b></field>
+        <field><a>v8</a><b>phoneNumber</b></field>
+        <field><a>v9</a><b>sex</b></field>
+        <field><a>v10</a><b>address</b></field>
+        <field><a>f1</a><b>count</b></field>
+        <field><a>t1</a><b>lastLoginTime</b></field>
+    </mapping>
+
+    <mapping>
+        <class-a>com.court.evidence.es.model.Evidence</class-a>
+        <class-b>com.court.evidence.domain.Message</class-b>
+        <field><a>v1</a><b>displayName</b></field>
+        <field><a>v2</a><b>content</b></field>
+        <field><a>nv1</a><b>avatar</b></field>
+        <field><a>nv2</a><b>chatType</b></field>
+    </mapping>
+
+    <mapping>
+        <class-a>com.court.evidence.es.model.Evidence</class-a>
+        <class-b>com.court.evidence.domain.MediaFile</class-b>
+        <field><a>nv1</a><b>fileType</b></field>
+        <field><a>nv2</a><b>content</b></field>
+        <field><a>nv3</a><b>path</b></field>
+    </mapping>
+
+    <mapping>
+        <class-a>com.court.evidence.es.model.Evidence</class-a>
+        <class-b>com.court.evidence.domain.Operation</class-b>
+        <field><a>v1</a><b>appName</b></field>
+        <field><a>v2</a><b>opposite</b></field>
+        <field><a>nv1</a><b>action</b></field>
+        <field><a>nv2</a><b>content</b></field>
+    </mapping>
+
+    <mapping>
+        <class-a>com.court.evidence.es.model.Evidence</class-a>
+        <class-b>com.court.evidence.domain.GroupMember</class-b>
+        <field><a>v1</a><b>groupAccount</b></field>
+        <field><a>v2</a><b>groupName</b></field>
+        <field><a>v3</a><b>memberAccount</b></field>
+        <field><a>v4</a><b>memberNickname</b></field>
+        <field><a>v5</a><b>description</b></field>
+    </mapping>
+</mappings>
