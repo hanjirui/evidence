@@ -25,10 +25,4 @@ public class ReportServiceTest {
         System.out.println(reportService.findByCaseId("5DD77A9F"));
     }
 
-    @Test
-    public void testUpdateReport(){
-        Report report = reportService.findByCaseId("5DD77A9F");
-        report.setEvidenceName("华为_Mate7");
-        reportService.update(report);
-    }
 }

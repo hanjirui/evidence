@@ -19,7 +19,7 @@ curl -X POST "localhost:9200/_aliases" -H 'Content-Type: application/json' -d'
 
 
 测试分词
-curl -X GET "localhost:9200/_analyze?pretty" -H 'Content-Type: application/json' -d'
+curl -X POST "localhost:9200/_analyze?pretty" -H 'Content-Type: application/json' -d'
 {
   "tokenizer" : "ik_max_word",
   "text" : "周瑜打黄盖 Just do it"
