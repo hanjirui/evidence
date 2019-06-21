@@ -1,11 +1,11 @@
 package com.court.evidence.enums;
 
-public enum ZeroOne {
-    ZERO(0), ONE(1);
+public enum YesNo {
+    YES(1), NO(0);
 
     private int value;
 
-    ZeroOne(int value){
+    YesNo(int value){
         this.value = value;
     }
 

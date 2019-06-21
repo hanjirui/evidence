@@ -16,6 +16,7 @@ import java.time.LocalDateTime;
 @Document(indexName = "report", type = "_doc", createIndex = false)
 public class Report extends BaseModel {
     private String caseId;
+    private String caseNumber;
     private String caseName;
     private String investigator;
     @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")

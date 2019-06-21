@@ -26,12 +26,10 @@ public class ReportTreeNodeResponse {
     private Integer leafFlag;
     private String modelType;
     private String category;
-    private String subCategory1;
-    private String subCategory2;
-    private String subCategory3;
-    private String subCategory4;
-    private String subCategory5;
     private String nodeName;
+    private String icon;
+    private String originJumperUrl;
+
     @Builder.Default
     private List<ReportTreeNodeResponse> children = Lists.newArrayList();
 

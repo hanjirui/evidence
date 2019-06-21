@@ -9,11 +9,13 @@ import com.court.evidence.es.model.Report;
 import com.court.evidence.es.repository.ReportRepository;
 import com.court.evidence.es.repository.ReportTreeNodeRepository;
 import com.google.common.collect.Lists;
+import lombok.extern.slf4j.Slf4j;
 import org.dozer.Mapper;
 import org.springframework.util.CollectionUtils;
 
 import java.util.List;
 
+@Slf4j
 public class ModelCollector {
     private static final Mapper MAPPER = SpringContextHolder.getBean(Mapper.class);
     private static final EvidenceRepository evidenceRepository = SpringContextHolder.getBean(EvidenceRepository.class);

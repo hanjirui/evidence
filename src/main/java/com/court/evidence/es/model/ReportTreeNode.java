@@ -20,16 +20,8 @@ public class ReportTreeNode extends BaseModel implements Comparable<ReportTreeNo
     private String modelType;
     private String nodeName;
     private String category;
-    private String subCategory1;
-    private String subCategory2;
-    private String subCategory3;
-    private String subCategory4;
-    private String subCategory5;
-    private String subCategory6;
-    private String subCategory7;
-    private String subCategory8;
-    private String subCategory9;
-    private String subCategory10;
+    private String icon;
+    private String originJumpUrl;
 
     @Override
     public int compareTo(ReportTreeNode o) {

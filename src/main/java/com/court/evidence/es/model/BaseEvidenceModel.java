@@ -1,7 +1,7 @@
 package com.court.evidence.es.model;
 
 import com.court.evidence.domain.PropertyPair;
-import com.court.evidence.enums.ZeroOne;
+import com.court.evidence.enums.YesNo;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -51,7 +51,7 @@ public class BaseEvidenceModel extends BaseModel {
      * 人工删除标志
      */
     @Builder.Default
-    private Integer deleteFlag = ZeroOne.ZERO.getValue();
+    private Integer deleteFlag = YesNo.NO.getValue();
 
     private String md5;
 
